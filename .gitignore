@@ -1,0 +1,12 @@
+
+*.properties
+
+*.xml
+
+*.css
+
+*.xsl
+
+target/
+
+target/streams/
