@@ -54,4 +54,11 @@ class PizzaTests extends FunSuite with BeforeAndAfter {
     }
   }
 
+  ignore ("A new pizza has zero toppings", DatabaseTest) {
+    //assert(pizza.getToppings.size === 1)
+    expectResult(0) {
+      pizza.getToppings.size
+    }
+  }
+
 }
