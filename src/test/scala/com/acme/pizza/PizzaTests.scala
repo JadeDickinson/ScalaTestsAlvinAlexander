@@ -47,4 +47,11 @@ class PizzaTests extends FunSuite with BeforeAndAfter {
     intercept[Exception] { pizza.boom }
   }
 
+  test("new pizza has zero toppings", DatabaseTest, WsTest) {
+    //assert(pizza.getToppings.size === 1)
+    expectResult(0) {
+      pizza.getToppings.size
+    }
+  }
+
 }
