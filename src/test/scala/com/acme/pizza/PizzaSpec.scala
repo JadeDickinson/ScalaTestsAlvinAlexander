@@ -30,7 +30,9 @@ class PizzaSpec extends FunSpec with GivenWhenThen {
         pizza.getToppings.size
       }
     }
-    
+
+    it("should allow removal of toppings") (pending)
+
     it ("should allow the addition of toppings") {
       Given("a new pizza")
       pizza = new Pizza
