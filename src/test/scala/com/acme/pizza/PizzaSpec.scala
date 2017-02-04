@@ -26,6 +26,27 @@ class PizzaSpec extends FunSpec with GivenWhenThen {
       val t = pizza.getToppings(0)
       assert(t === new Topping("green olives"))
     }
+
+    it("Should start with no toppings") {
+      Given("a new pizza")
+      pizza = new Pizza
+      Then("the topping count should be zero")
+      assert(pizza.getToppings.size == 0)
+    }
+
+    it("Should allow removal of toppings") {
+      Given("a new pizza with one topping")
+      pizza = new Pizza
+      pizza.addTopping(Topping("green olives"))
+
+      When("the topping is removed")
+      pizza.removeTopping(Topping("green olives"))
+
+      Then("the topping count should be zero")
+      expectResult(0) {
+        pizza.getToppings.size
+      }
+    }
   }
 
 }
