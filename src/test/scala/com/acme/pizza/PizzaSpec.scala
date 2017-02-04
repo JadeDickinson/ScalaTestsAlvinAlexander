@@ -4,8 +4,8 @@ import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 import org.scalatest.GivenWhenThen
 
-class PizzaSpec extends FunSpec with BeforeAndAfter {
-  
+class PizzaSpec extends FunSpec with GivenWhenThen {
+
   var pizza: Pizza = _
 
   describe("A Pizza") {
