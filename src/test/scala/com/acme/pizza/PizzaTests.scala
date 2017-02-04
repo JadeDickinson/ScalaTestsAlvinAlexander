@@ -34,4 +34,6 @@ class PizzaTests extends FunSuite with BeforeAndAfter {
   // mark that you want a test here in the future
   test ("test pizza pricing") (pending)
 
+  test ("should allow removal of toppings") (pending)
+
 }
