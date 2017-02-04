@@ -50,6 +50,14 @@ class PizzaSpec extends FunSpec with GivenWhenThen {
       assert(t === new Topping("green olives"))
     }
 
+    // add the 'DatabaseTest' tag to the 'it' method
+    it("Should start with no toppings", DatabaseTest) {
+      Given("a new pizza")
+      pizza = new Pizza
+      Then("the topping count should be zero")
+      assert(pizza.getToppings.size == 0)
+    }
+
   }
 
 }
