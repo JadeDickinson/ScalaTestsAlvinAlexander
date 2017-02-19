@@ -3,7 +3,7 @@ package com.acme.pizza
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter
 
-class PizzaTests extends FunSuite with BeforeAndAfter {
+class PizzaTests extends FunSuite with BeforeAndAfter with MockitoSugar {
   
   var pizza: Pizza = _
 
